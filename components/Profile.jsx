@@ -1,0 +1,1 @@
+export default function Profile({user,onLogout}){return <div className="account"><img className="avatar" src={user.picture} alt="profile"/><div><b style={{fontSize:12}}>{user.name}</b><div className="muted">{user.email}</div></div><button className="btn" style={{width:'auto',padding:'7px 10px'}} onClick={onLogout}>Keluar</button></div>}
