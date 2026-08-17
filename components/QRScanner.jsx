@@ -1,0 +1,1 @@
+'use client';import {useEffect,useRef} from 'react';import {Scanner} from '@yudiel/react-qr-scanner';export default function QRScanner(){return <div><p className="muted">Izinkan akses kamera untuk memindai QR.</p><Scanner onScan={r=>{if(r?.[0]?.rawValue)alert('QR: '+r[0].rawValue)}} constraints={{facingMode:'environment'}}/></div>}
