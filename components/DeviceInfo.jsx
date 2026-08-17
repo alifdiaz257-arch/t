@@ -1,0 +1,1 @@
+'use client';import {useEffect,useState} from 'react';export default function DeviceInfo(){const [x,setX]=useState('');useEffect(()=>setX(`${navigator.userAgentData?.platform||navigator.platform} • ${navigator.userAgent}`),[]);return <p className="muted">{x}</p>}
